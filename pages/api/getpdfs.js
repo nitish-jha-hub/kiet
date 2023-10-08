@@ -4,8 +4,8 @@ import Pdf from '../../schemas/pdf';
 const handler = async (req, res) => {
   
   console.log(req.body)
-  const pdf1 = await Pdf.find({name: req.body.name});
-  res.status(200).json(pdf1);
+  const pdfs = await Pdf.find({});
+  res.status(200).json(pdfs);
 };
 
 export default connectDb(handler);

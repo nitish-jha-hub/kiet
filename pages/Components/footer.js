@@ -114,7 +114,7 @@ const footer = () => {
     <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
       <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
         <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
-          <label htmlFor="footer-field" className="leading-7 text-sm text-gray-600">Subscribe htmlFor Email Updates</label>
+          <label htmlFor="footer-field" className="leading-7 text-sm text-gray-600">Subscribe For Email Updates</label>
           <input type="text" placeholder='Enter Your Email Id' id="footer-field" name="footer-field" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-green-200 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
         </div>
         <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Subscribe</button>
@@ -149,10 +149,10 @@ const footer = () => {
   </div>
   <div className="bg-gray-100">
     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p className="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
-        <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
+      <p className="text-gray-500 text-sm text-center sm:text-left">© 2023 KIET —
+        <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@KIET</a>
       </p>
-      <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Enamel pin tousled raclette tacos irony</span>
+      <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm"> KIET Group of Institutions - All Rights Reserved</span>
     </div>
   </div>
 </footer>

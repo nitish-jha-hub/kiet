@@ -7,8 +7,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-export default function Home(user) {
-  console.log(user);
+export default function Home({user}) {
+  // console.log(user);
   const router = useRouter()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -42,7 +42,7 @@ export default function Home(user) {
       body: JSON.stringify(data),
     })
     let response = await res.json()
-    console.log(response);
+    // console.log(response);
     setEmail('')
     setPassword('')
     // setLoading(false);
@@ -78,9 +78,9 @@ export default function Home(user) {
 
   return (
     <div className='flex'>
-      <ToastContainer/>
-      {/* logging comp */}
-      {<div className="w-full max-w-xs">
+      <ToastContainer />
+      {/* logging component shows only if user is not present i.e-not logged in */}
+      {!user&& <div className="w-full max-w-xs">
         <form onSubmit={handleSubmit} method='POST' className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
@@ -108,6 +108,8 @@ export default function Home(user) {
           &copy;2020 Acme Corp. All rights reserved.
         </p>
       </div>}
+
+      {/* if user is present */}
 
     </div>
   )

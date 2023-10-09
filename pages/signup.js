@@ -34,7 +34,7 @@ const Signup = () => {
 
     // setLoading(true)
     const data = { firstname, rollno, email, password }
-    console.log(data);
+    // console.log(data);
     let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/adduser`, {
       method: 'POST', // or 'PUT'
       headers: {
@@ -43,7 +43,7 @@ const Signup = () => {
       body: JSON.stringify(data),
     })
     let response = await res.json()
-    console.log(response);
+    // console.log(response);
     setFirstname('')
     setEmail('')
     setPassword('')

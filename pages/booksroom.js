@@ -22,12 +22,12 @@ const Booksroom = () => {
             // console.log(res);
             setPdf(res)
         }
-        if (!localStorage.getItem('myuser')) {
-            router.push('/')
-        }
-        else {
-            fetchpdf()
-        }
+        // if (!localStorage.getItem('myuser')) {
+        //     router.push('/')
+        // }
+        // else {
+            fetchpdf();
+    //     }
     }, [router])
 
 

@@ -42,7 +42,7 @@ export default function Home({user}) {
       body: JSON.stringify(data),
     })
     let response = await res.json()
-    // console.log(response);
+    console.log(response);
     setEmail('')
     setPassword('')
     // setLoading(false);

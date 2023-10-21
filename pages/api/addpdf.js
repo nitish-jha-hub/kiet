@@ -2,6 +2,9 @@ import connectDb from "../../middleware/mongodb"
 import Pdf from "../../schemas/pdf"
 
 const handler = async (req, res) => {
+  if (req.method == 'OPTIONS') {
+    res.status(200).json({ success: true });
+  }
   if (req.method == 'POST') {
     let p = new Pdf({
       name: req.body.name,

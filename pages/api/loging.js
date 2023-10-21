@@ -3,7 +3,10 @@ import User from "../../schemas/user"
 var jwt = require('jsonwebtoken');
 
 const handler = async (req, res) => {
-    if (req.method == 'POST') {
+    if (req.method == 'OPTIONS') {
+        res.status(200).json({ success: true});
+    }
+    if (req.method == 'POST' ) {
         console.log(req.body);
         // console.log(req.body.email, req.body.password)
         let account = await User.findOne({ "email": req.body.email })

@@ -2,6 +2,9 @@ import connectDb from "../../middleware/mongodb"
 import User from "../../schemas/user"
 
 const handler = async (req, res) => {
+  if (req.method == 'OPTIONS') {
+    res.status(200).json({ success: true });
+  }
   if (req.method == 'POST') {
     let p = new User({
       firstname: req.body.firstname,

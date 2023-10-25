@@ -39,7 +39,7 @@ const submitFormData = async(e)=>{
   e.preventDefault()
   const data = {name, email, phone, roll, section, gender, password}
   console.log(data);
-  let res = await fetch(`http://localhost:3000/api/reg`, {
+  let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reg`, {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',

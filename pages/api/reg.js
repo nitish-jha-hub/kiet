@@ -3,7 +3,7 @@ import connectDb from "@/middleware/mongodb";
 
 
 const handler = async (req, res) => {
-    if (req.method == 'OPTION') {
+    if (req.method == 'OPTIONS') {
         res.status(200).json({ success: true })
     };
     if (req.method == 'POST') {
